@@ -28,7 +28,7 @@ class MovieService:
         mid = movie_data.get("id")
         movie = self.get_movies_one(mid)
 
-        movie.title = movie_data.get("tilte")
+        movie.title = movie_data.get("title")
         movie.description = movie_data.get("description")
         movie.trailer = movie_data.get("trailer")
         movie.year = movie_data.get("year")
@@ -41,7 +41,7 @@ class MovieService:
         movie = self.get_movies_one(mid)
 
         if "title" in movie_data:
-            movie.title = movie_data.get("tilte")
+            movie.title = movie_data.get("title")
         if "description" in movie_data:
             movie.description = movie_data.get("description")
         if "trailer" in movie_data:

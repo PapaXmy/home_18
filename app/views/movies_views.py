@@ -18,7 +18,7 @@ class MoviesView(Resource):
 
         filters = {
             "director_id": director,
-            "genre": genre,
+            "genre_id": genre,
             "year": year
         }
 
